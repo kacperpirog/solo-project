@@ -1,0 +1,52 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+  
+body {
+	margin: 0;
+	background: $light-color;
+	font-family: $brand-font;
+	font-size: 14px;
+	font-weight: $brand-font;
+	color: $paragraph-color;
+}
+  
+.container {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 0 20px;
+
+}
+
+.content {
+
+	margin-left: 150px;
+	height:200px;
+}
+.footer {
+    border: none;
+}
+
+.main-nav {
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	height: 600px;
+	position: fixed;
+	overflow: 0;  
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	  }
+	  
+	  li a {
+		float: left;
+		display: block;
+		width: 60px;
+		background-color: #dddddd;
+	  }
+}
