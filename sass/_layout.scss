@@ -23,7 +23,7 @@ button{
 }
 
   .container {
-	width: 100%;
+	width: 95%;
 	max-width: 1170px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -166,18 +166,24 @@ button{
 	padding: 11px;
 }
 
+.top__date__btn {
+	height: 50px;
+	width: 65px;
+	background-color: #f58220;
+	border-radius: 5px;
+	border: #ddd;
+	margin-left: 10px;
+}
 /* Table*/
 
 .border__table {
-	width: 50%;
+	display: flex;
+	width: 350px;
+	height: 100px;
 	text-align: center;
 	padding-top: 20px 0;
 	margin: auto;
-	.li{
-		list-style-type: none;
-	}
-
-
+	padding: 14px 0 14px 0;
 }
 .title {
 	text-align: center;
@@ -240,6 +246,15 @@ button{
 
 .sidebar__icon {
 	width: 15px;
+
+}
+.top__icon {
+	width: 20px;
+	margin: auto;
+}
+.top__icon__btn {
+	width: 20px;
+	margin-left: 40px;
 }
 .top__btn {
 	cursor: pointer;
@@ -251,9 +266,12 @@ button{
 }
 
 .title_page {
-	border: 3px;
+	border: 1px;
 	border-bottom-style: solid;
-	border-color: $grey-color;
+	border-color: $title-color;
+	font-size: 20px;
+	color: $title-color;
+	padding: 14px 0 14px 0;
 }
 
 /*nav*/
@@ -268,7 +286,7 @@ button{
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	background-color: #fff;
-	max-width: 1170px;
+	max-width: 1250px;
   
   }
 #wrapper {
