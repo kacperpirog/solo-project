@@ -1,33 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>admin panel</title>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet"> 
 </head>
 <body>
-  <div class="header">
-		Header
-	</div>
-	<div class="container">
-        <div class="main-nav">
-			<ul>
-			<li><a href="#General">General</a></li>
-			<li><a href="#Details">Details</a></li>
-			<li><a href="#Links">Links</a></li>
-			<li><a href="#Banners">Banners</a></li>
-			<li><a href="#Personal_data">Personal data</a></li>
-			<li><a href="#Payout">Payout</a></li>
-			<li><a href="#Postback">Postback</a></li>
-			</ul>
-		  </div>
-		<div class="content">
-			Content
-		</div>
-	</div>
-	<div class="footer">
-		Footer
-	</div>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Just do it </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light"><img class="sidebar__icon" src="./icons/general.svg" alt="general">General</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><img class="sidebar__icon" src="./icons/details.svg" alt="details">Details</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><img class="sidebar__icon" src="./icons/links.svg" alt="links">Links</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><img class="sidebar__icon" src="./icons/banners.svg" alt="banners">Banners</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><img class="sidebar__icon" src="./icons/personaldata.svg" alt="personaldata">Personal data</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><img class="sidebar__icon" src="./icons/payout.svg" alt="payout">Payout</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"><img class="sidebar__icon" src="./icons/postback.svg" alt="postback">Postback</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar_1">
+        <div  id="menu-toggle"><img class="sidebar__hamb" id="sidebar__hamb" src="./images/menu.svg" ></div>
+        <div class="top__element " >
+          <div class="border__top">
+            <img class="sidebar__icon" src="./icons/wallet.svg" alt="wallet">
+              $1,5000.00
+            <img class="sidebar__icon" src="./icons/arrow-down.svg" alt="notification">
+          </div>
+          <div class="border__top">
+            <img class="sidebar__icon" src="./icons/notification.svg" alt="notification">
+          </div>  
+          <div class="border__top">
+            <img class="sidebar__icon" src="./icons/profile.svg" alt="wallet">
+              Leonardo Dicaprio
+          </div>
+          <div class="border__top">
+            <img class="sidebar__icon" src="./icons/quit.svg" alt="quit">
+          </div>  
+        </div>
+      </nav>
+
+      <div class="container">
+        <h1 class="mt-4 title_page">General Statistic</h1>
+        <div class="container">
+          <div class="title">
+            <div class="border__table">
+              <table  class="table table-bordered table-hover tablesaw " data-tablesaw-mode="stack">
+                <thead>
+                  <tr>
+                    <th>02.02.2021</th>
+                    <th>02.02.2021<img class="sidebar__icon" src="./icons/wallet.svg" alt="wallet"></th>
+                  </tr> 
+                  <img class="sidebar__icon" src="./icons/wallet.svg" alt="wallet">
+                  
+                </thead>
+                
+              </table>
+              
+            </div>
+            
+          </div>
+        </div>
+        <!-- <div class="title">
+          <ul class="border__table">
+            <li>02.02.2021</li>
+            <li>02.02.2021</li>
+            <img class="sidebar__icon" src="./icons/wallet.svg" alt="wallet">
+          </ul>
+          <img class="sidebar__icon" src="./icons/wallet.svg" alt="wallet">
+        </div> -->
+          
+        <canvas class="myChart" id="myChart"></canvas>
+
+        
+      </div>
+      <button class="showModal__btn">show modal</button>
+      <div class="overlay" id="overlay">
+        <div class="modal" id="myModal">
+          <!-- Tutaj domyślna z bootcampu -->
+          <!-- <div class="btn-close js--close-modal">x</div> -->
+          <div class="btn-close">x</div>
+      
+          <h4>Witaj w modalu!</h4>
+          <p>Lorem ipsum dolor sit amet...</p>
+      
+          <button class="js--close-modal">Okay</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <h1 class="mt-4">General Statistic</h1>
+        <div class="scroll-wrapper">
+          <form action="" method="POST">
+            <div class="field">
+              <label>Imię i nazwisko</label>
+              <input type="text" name="user-name">
+            </div>
+            <div class="field">
+              <label>Wiadomość</label>
+              <textarea name="message"></textarea>
+            </div>
+            <button type="submit">Wyślij</button>
+          </form>
+        </div>
+      </div>
+   
+
+    </div>
+    <!-- /#page-content-wrapper -->
+  
+  </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+      <!-- /#wrapper -->
+  <script>
+
+$("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+      $("#sidebar__hamb").toggleClass("toggled__hamb")
+    });
+
+  </script>
 </body>
+
 </html>
