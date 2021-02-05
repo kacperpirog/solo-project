@@ -63,8 +63,8 @@ showModalBtn.addEventListener("click", handleModalOpen)
 hideModalBtn.addEventListener("click", handleModalClose)
 
 
-  var ctx = document.getElementById('myChart').getContext('2d');
-  var chart = new Chart(ctx, {
+  let ctx = document.getElementById('myChart').getContext('2d');
+  let chart = new Chart(ctx, {
     // 1
     type: 'bar',
     data: {
@@ -93,6 +93,8 @@ hideModalBtn.addEventListener("click", handleModalClose)
             data: [ 59, 49, 68, 90, 67, 41, 13, 38, 48, 48 ],
             // 7
             hidden: true,
-        }]
+        }
+      ]
+        
     },
 });
